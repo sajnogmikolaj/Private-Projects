@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Work in progress</title>
+  <body>
+    <h1>Zarejestruj dostawę towaru</h1>
+
+    <form class="form">
+      <label for="data">Data i godzina przyjazdu:</label>
+
+      <input
+        type="datetime-local"
+        id="data"
+        name="data"
+        class="input"
+        max="12"
+        required
+      />
+
+      <label for="nrrej">Numer rejestracyjny pojazdu</label>
+
+      <input type="text" id="rej" class="input" maxlength="8" required />
+
+      <label for="qpal">Ilość palet z towarem</label>
+
+      <input
+        type="number"
+        value=""
+        min="1"
+        max="20"
+        step="1"
+        id="qpal"
+        class="input"
+        placeholder="wpisz wartość"
+        required
+      />
+
+      <label for="gate">Numer bramy</label>
+
+      <input
+        type="number"
+        value=""
+        min="1"
+        max="3"
+        step="1"
+        id="gate"
+        class="input"
+        placeholder="wpisz wartość"
+      />
+
+      <input type="submit" class="button" id="submit" value="submit" />
+      <script src="JS.js"></script>
+    </form>
+    <p>Work in progress</p>
+    <a type="button" href="calendar.html">Calendar</a>
+  </body>
+</html>
